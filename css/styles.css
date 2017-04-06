@@ -1,0 +1,235 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 100%;
+	line-height: 1.7em;
+	color: #000000;
+    background-color: #b5ffe2;
+}
+
+#container {
+	width: 70%;
+	margin: 10px auto;
+}
+
+#logo {
+	float: left;
+	width: 17%;
+	margin: 0;
+	padding: 1em;
+}
+
+#landscape_image {
+	float: left;
+	width: 70%;
+	padding-left: : 1em;
+}
+
+#logo img {
+	max-width: 100%;
+	height: auto;
+}
+
+#landscape_image img {
+	max-width: 100%;
+	height: auto;
+}
+
+nav {
+	margin: 0;
+	padding: 0;
+	width:17%;
+	border-right: 1px dotted #cccccc;
+	float: left;
+}
+
+nav a {
+	text-decoration: none;
+	font-size: 1.125em;
+	font-weight: 400;
+	padding: 15px;
+	color: #000000;
+	display: block;
+	color: #00a665;
+
+}
+
+nav a.selected {
+	background: #f6f6f6;
+	color: #00a665;
+}
+
+nav a.selected:hover {
+	background: #f6f6f6;
+	color: #00a665;
+}
+
+nav a:hover {
+	background: #000;
+}
+
+nav h2 {
+	color: #000;
+	padding: .2em;
+}
+
+#content {
+	float: left;
+	width: 70%;
+	margin: 0;
+	padding: 1em;
+	border-right: 1px dotted #ccc;
+	position: relative;
+
+}
+
+#content h3 {
+	font-family: Georgia, serif;
+	font-size: 1.5em;
+	margin: 30px 0 10px 0;
+	font-weight: normal;
+}
+
+#sidebar {
+	float: left;
+	padding: 1em;
+	font-size: .875em;
+}
+
+#sidebar h3 {
+	font-size: 1.125em;
+	border-bottom: 1px dotted #ccc;
+}
+
+footer {
+	clear:both;
+	margin: 0;
+	padding: .5em;
+	color:#333333;
+	font-variant: small-caps;
+	font-size: .813em;
+	text-align: center;
+}
+
+#content img {
+	float: left;
+	margin: 1em;
+}
+
+#bio {
+	margin-left: 3em;
+	font-size: .875em;
+}
+
+#bio a {
+	text-decoration: none;
+
+}
+
+#bio a:hover {
+	color: #ca1e00;
+}
+
+#sidebar a.CMU {
+	text-decoration: none;
+	color: #0F0;
+}
+
+#sidebar a.CMU:hover {
+	text-decoration: underline;
+}
+
+#projects_table table {
+	width: 75%;
+	border-collapse: collapse;
+	margin: auto;
+	border: 3px solid black;
+	border-color: #f96666;
+	padding: 3px;
+}
+
+
+#projects_table td, th {
+	padding: 2px;
+	text-align: center;
+	border: 1px solid black;
+	border-color: #333333;
+
+}
+
+
+#projects_table th {
+	height: 40px;
+	font-weight: bold;
+}
+
+
+
+#projects_table td, th {
+	padding: 2px;
+	text-align: center;
+	border: 0px;
+
+}
+
+#shadyside_table table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: auto;
+	border: 3px #FFF;
+	border-color: #FFF;
+	padding: 3px;
+}
+
+#shadyside_table td, th {
+	padding: 2px;
+}
+
+
+#contact_form {
+	width: 75%;
+	margin: auto;
+	border: 0px;
+	border-color: #f96666;
+	padding: 10px;
+}
+
+#contact_form legend {
+	font-weight: bold;
+	text-align: center;
+	color: #666666;
+}
+
+#contact_form label {
+	font-weight: bold;
+	text-align: center;
+}
+
+html {
+	overflow-y: scroll;
+	overflow-x: scroll;
+}
+
+iframe {
+	display:block;
+	margin:auto;
+}
+
+#content table {
+	float: left;
+	width: 35%;
+	margin: 0;
+	padding: 1em;
+}
+
+#accordion {
+	max-width: 100%;
+	margin: 0;
+	padding: 1em;
+}
+
+#tabs {
+	float: left;
+	max-width: 100%;
+	margin: 0;
+	padding: 1em;
+}

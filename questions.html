@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta name="author" content="Surya Singla">
+	<meta name="keywords" content="Prantl’s prantlsbakery almond torte Prantl">
+	<meta name="description" content="Try out Prantl's bakery, you won't regret it!">
+
+	<title>Prantl's Bakery</title>
+	<title>Suya Singla's Website</title>
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css">
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+
+</head>
+<body>
+	<div id="container">
+		<div id="top_row">
+			<header>
+				<div id="logo">
+					<a href="index.html"><img src="images/logo.png" alt="Photo" /></a>
+				</div>
+				<div id="landscape_image">
+					<img src="images/landscape.jpg" alt="Photo"/>
+				</div>
+			</header>
+		</div>
+
+
+		<nav>
+			<h2>Navigation</h2>
+			<a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="locations.html">Locations</a>
+			<a href="questions.html" class="selected">Questions?</a>
+		</nav>
+
+		<div id="content">
+
+			<h3>Visitor Inquiry Form</h3>
+			
+			<div id="contact_form">
+				<form onsubmit="return validate()" action="mailto:infoneeded@prantlsbakery.com" method="post" enctype="text/plain">
+						<ol>
+							<li><label for="uname">Name:</label><br/>
+							<input type="text" id="uname" name="uname" size="20" maxlength="250" required=""><br/><br/></li>
+
+							<li><label for="zip">Your Zip code:</label>
+							<input type="text" id="zip" name="zip"><br/><br/></li>
+
+							<li><label for="emailAddress">Please provide your email address</label>
+							<input type="text" name="emailAddress" id="emailAddress" placeholder="andrewcaregie@gmail.com" required><br/><br/></li>
+						</ol>
+						<label for="message">Inquiry:</label>
+						<textarea id="message" name="message" rows="4" cols="50" ></textarea><br/><br/>
+						
+						<label for="emailUpdate">Do you want to be subscribed to our mailing list?</label>
+						<input type="checkbox" id="emailUpdate" name="emailUpdate">Yes, please update me!<br/><br/>
+					<button type="submit"><img src="images/submit.png"></button>
+				</form>
+			</div>
+		</div>
+
+		<footer>
+			<hr/>
+			&copy; Surya Singla 2017<hr/>
+			
+			<a href="https://www.facebook.com/PrantlsBakery" target="_blank"><img src="images/Facebook.png"></a>
+
+			<a href="https://www.instagram.com/prantls_bakery/"><img src="images/instagram.png"></a>
+
+			<a href="https://twitter.com/prantlsbakery" target="_blank"><img src="images/twitter.png"></a>
+
+		</footer>
+	</div>
+
+
+</body>
+</html>

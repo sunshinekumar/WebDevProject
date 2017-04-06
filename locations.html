@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+	<meta name="author" content="Surya Singla">
+	<meta name="keywords" content="Prantl’s prantlsbakery almond torte Prantl">
+	<meta name="description" content="Try out Prantl's bakery, you won't regret it!">
+
+	<title>Prantl's Bakery</title>
+	<title>Suya Singla's Website</title>
+
+	<!--CSS links-->
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+
+	<link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css" />
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css" />
+
+
+
+	<!--Javascript files-->
+
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+
+	<script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+
+
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+	<script>
+
+		$(function() {
+
+			$( "#tabs" ).tabs({
+
+				event: "mouseover"
+
+			});
+
+		});
+
+	</script>
+
+
+	<script type="text/javascript">
+	$(function () {
+		$('#container-graph1').highcharts({
+			title: {
+		        text: 'When we are busiest'
+		    },
+
+		    yAxis: {
+		        title: {
+		            text: 'Number of customers'
+		        }
+		    },
+		    xAxis: {
+		        title: {
+		            text: 'Time of day'
+		        },
+		        categories: ['7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm']
+		    },
+
+		    tooltip: {
+		        formatter: function () {
+		            return this.y + " people in the shop (on average)";
+		        }
+    		},
+
+		    
+		    series: [{
+		        data: [10,8,24,5,7,32,16,18,27,39,32]
+		    }]
+		});
+	});
+	</script>
+
+	<script type="text/javascript">
+	$(function () {
+		$('#container-graph2').highcharts({
+			title: {
+		        text: 'When we are busiest'
+		    },
+
+		    yAxis: {
+		        title: {
+		            text: 'Number of customers'
+		        }
+		    },
+		    xAxis: {
+		        title: {
+		            text: 'Time of day'
+		        },
+		        categories: ['7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm']
+		    },
+
+		    tooltip: {
+		        formatter: function () {
+		            return this.y + " people in the shop (on average)";
+		        }
+    		},
+
+		    
+		    series: [{
+		        data: [24,12,16,8,11,19,15,18,13,21,35]
+		    }]
+		});
+	});
+	</script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="top_row">
+			<header>
+				<div id="logo">
+					<a href="index.html"><img src="images/logo.png" alt="Photo" /></a>
+				</div>
+				<div id="landscape_image">
+					<img src="images/landscape.jpg" alt="Photo"/>
+				</div>
+			</header>
+		</div>
+
+
+		<nav>
+			<h2>Navigation</h2>
+			<a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="locations.html" class="selected">Locations</a>
+			<a href="questions.html">Questions?</a>
+		</nav>
+
+		<div id="content">
+
+			<h3>Contact</h3>
+			<p>Select a location to see its location and information</p>
+			<div id="tabs">
+
+				<ul>
+
+					<li><a href="#tabs-1">Shadyside</a></li>
+
+					<li><a href="#tabs-2">Downtown</a></li>
+
+				</ul>
+
+				<div id="tabs-1">
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97169.27907994411!2d-80.00629564988414!3d40.441184295311224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f211aed70341%3A0x10db72884d553d04!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1491197968194" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+					<div id="shadyside_table">
+						<table>
+						<tr>
+							<th colspan="1">Store info</th>
+						</tr>
+							<td>5525 Walnut Street Pittsburgh, PA 15222</td>
+						</tr>
+							<td>412-621-2092 </td>
+						</tr>
+							<td><a href="mailto:info@prantlsbakery.com">info@prantlsbakery.com</a></td>
+						</tr>
+						<tr>
+							<td><a href="http://www.prantlsbakery.com/locations/">Official website</a>
+							</td>
+						</tr>
+						</tr>
+							<td><p>Monday: 
+							9am – 4pm</p>
+							<p>Tuesday – Saturday: 
+							7:30am – 6pm</p>
+							<p>
+							Sunday: 
+							9am – 4pm</p>
+							</td>
+						</tr>
+						</table>	
+					</div>		
+
+					<img src="images/shadysidefront.jpg" alt="Photo"/>		
+
+					<div id="container-graph1"></div>
+
+				</div>
+
+				<div id="tabs-2">
+
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24290.42367694011!2d-79.98500737198891!3d40.44643108855538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f15696baf219%3A0x9e8bccef10009784!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1491199386618" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+					<div id="downtown_table">
+						<table>
+						<tr>
+							<th colspan="1">Store info</th>
+						</tr>
+							<td>438 Market Street Pittsburgh, PA 15222</td>
+						</tr>
+							<td>412-471-6861</td>
+						</tr>
+							<td><a href="mailto:infoms@prantlsbakery.com">infoms@prantlsbakery.com</a></td>
+						</tr>
+						<tr>
+							<td><a href="http://www.prantlsbakery.com/locations/">Official website</a>
+							</td>
+						</tr>
+						</tr>
+							<td>
+							<p>Monday – Friday: 7am – 6pm</p>
+							<p>Saturday: 9am – 4pm</p>
+							<p>Sunday: 10am – 3pm</p>
+							</td>
+						</tr>
+						</table>	
+					</div>		
+
+					<img src="images/downtownfront.jpg" alt="Photo"/>		
+
+					<div id="container-graph2"></div>
+
+
+				</div>
+
+			</div>
+
+			
+
+		<footer>
+			<hr/>
+			&copy; Surya Singla 2017<hr/>
+			
+			<a href="https://www.facebook.com/PrantlsBakery" target="_blank"><img src="images/Facebook.png"></a>
+
+			<a href="https://www.instagram.com/prantls_bakery/"><img src="images/instagram.png"></a>
+
+			<a href="https://twitter.com/prantlsbakery" target="_blank"><img src="images/twitter.png"></a>
+
+		</footer>
+	</div>
+
+
+</body>
+</html>
